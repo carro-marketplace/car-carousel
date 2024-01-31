@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>360 Renderer</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preload" href="360.js" as="script" />
+    <link rel="preload" href="jquery.js" as="script" />
+    <link rel="preload" href="dev.js" as="script" />
+    <link rel="preconnect" href="https://kawisha-assets.s3.amazonaws.com" />
+  </head>
+
+  <body>
+    <div id="loading-tag">
+      <div class="loader"></div>
+      <h1 id="loading-label">Cargando, espere por favor...</h1>
+    </div>
+
+    <div id="containing"></div>
+
+    <script>
+      var searchParams = new URLSearchParams(window.location.search);
+    </script>
+    <script src="360.js"></script>
+    <script src="jquery.js"></script>
+    <script src="dev.js"></script>
+  </body>
+</html>
